@@ -1,0 +1,45 @@
+<p style="text-align: center; background: #e6e6e6;">Your work in the editor will reset if you leave or refresh this page. Also, clicking ".5x" might make the output window look nicer for you.</p>
+
+<p>Hey, everyone. Welcome to Kenzie Academy. I'm Davey Strus.</p>
+<p>Let's add some structure to our invitation page. In this video, we'll learn some new elements that were added in HTML 5. By the end, you'll know the <code>header</code>, <code>main</code>, and <code>footer</code> elements. Ready? Let's go.</p>
+<p>Code along with me using the editor on this page, and remember to pause the video as often as you need to.</p>
+<p>All we're going to do is add three new elements that were new in HTML 5. HTML 5 was released in 2014 and is very well supported by now. And all these elements do is add some structure to the page. They don't actually change its appearance. They will, however, be convenient when we get around to adding style to the page later.</p>
+<p>H1, H2... these are part of the <em>header</em> of our document. The H3 and the paragraph underneath it... that's really the main content section of our page. And the two credits at the bottom are the footer of the page. So let's wrap them in elements that indicate such.</p>
+<p>At the very beginning of the document, I'm going to add an element,  <code>&lt;header&gt;</code>. And I'm going to put a corresponding closing tag down here above "Album release party".</p>
+<pre><code>&lt;header&gt;
+&lt;h1&gt;Night of the Salamander&lt;/h1&gt;
+&lt;h2&gt;The new release from Beasley the Bard&lt;/h2&gt;
+
+&lt;!-- https://s3-us-west-2.amazonaws.com/s.cdpn.io/1152887/beasley.png --&gt;
+&lt;/header&gt;
+</code></pre>
+<p>So that includes the H1, the H2, and this weird little thing that we haven't talked about yet. We'll get to that soon. Don't worry. Now everything between the open and closing <code>header</code> tags is a header, right? It isn't terribly easy at a glance to tell where it begins and ends, because the opening tag and the closing tag are several lines away from each other. Sometimes you'll have pages and pages of markup, and you can make your life a whole lot easier by doing something to make these things easier to find. So what we can do is <em>indent</em> the markup in between the opening and closing tags. CodePen makes this really easy. You can just highlight all of those lines—everything in between the opening and closing <code>header</code> tags—and hit <kbd>Command</kbd> + <kbd>]</kbd> on Mac, or <kbd>Ctrl</kbd> + <kbd>]</kbd> on Windows, which is common keyboard shortcut for indenting in code editors.</p>
+
+<pre><code>&lt;header&gt;
+  &lt;h1&gt;Night of the Salamander&lt;/h1&gt;
+  &lt;h2&gt;The new release from Beasley the Bard&lt;/h2&gt;
+
+  &lt;!-- https://s3-us-west-2.amazonaws.com/s.cdpn.io/1152887/beasley.png --&gt;
+&lt;/header&gt;
+</code></pre>
+<p>Now this indents that markup without actually changing the way it appears on the page. We are just indenting our markup to make it easier to tell where the corresponding closing tag is to this opening <code>&lt;header&gt;</code> tag.</p>
+<p>Similarly, let's wrap the H3 and paragraph in a <code>main</code> element. Opening tag, closing tag, let's go ahead and indent everything that's in between...</p>
+<pre><code>&lt;main&gt;
+  &lt;h3&gt;Album release party&lt;/h3&gt;
+
+  &lt;p&gt;We hope to see &lt;em&gt;you&lt;/em&gt; &lt;strong&gt;October 13&lt;/strong&gt;!&lt;/p&gt;
+&lt;/main&gt;
+</code></pre>
+<p>... beautiful! Look at that structure! And then everything else I'm going to put inside a <code>footer</code>. Opening <code>&lt;footer&gt;</code> tag, and then at the very, very bottom, a closing <code>&lt;/footer&gt;</code> tag. And indent everything that comes in between.</p>
+<pre><code>&lt;footer&gt;
+  &lt;p&gt;Pixel art by Eric Alloway (@Iscaneus).&lt;/p&gt;
+
+  &lt;!-- https://twitter.com/iscaneus --&gt;
+
+  &lt;p&gt;Fire salamander photo by Cristo Vlahos. &lt;a href="https://creativecommons.org/licenses/by/3.0"&gt;CC BY 3.0&lt;/a&gt;&lt;/p&gt;
+&lt;/footer&gt;
+</code></pre>
+<p>Nothing earth-shattering here, but I think it makes it a little easier to find what we're looking for as we look through the markup to have it organized this way.</p>
+<p>Now then, does yours look like mine, with a <code>header</code> at the top, a <code>main</code> section in the middle, and a <code>footer</code> at the bottom? OK, great. Ready to move on.</p>
+<p>Next time, we'll learn how to add images to a page, as well as how to add comments in HTML.</p>
+<p>Until then, I'm Davey Strus. Haaaappy hacking!</p>
