@@ -12,7 +12,7 @@ Code along with me using the editor on this page, and remember to pause the vide
 
 Let's begin our alignment quest by trying to center all the text on the page. Looking at the original design, all of the text is, in fact, centered. Let's start with the `header`. There a CSS property called `text-align`. (Notice that anytime there's a CSS property with more than one word, we separate those words with a hyphen.) `text-align` can take values like `left`, which is the default; `right`; `justify`, which aligns left and right like a newspaper, but none of the elements in our header go onto multiple lines, so we can't really see what that does; and `text-align` can take the value `center`.
 
-```
+```css
 header {
   background: gray;
   color: white;
@@ -28,7 +28,7 @@ Not bad, but since we want to center all the text on the page, not just within t
 
 So I'm going to add a rule above `header`&mdash;it doesn't really matter, but I like to put it at the top&mdash;and my selector is going to simply say `body`. This is going to target the `body` element, which again is hidden from us in CodePen, but it's there, and everything else is inside it. So, don't forget your curly braces, and now let's say `text-align: center;`.
 
-```
+```css
 body {
   text-align: center;
 }
@@ -36,7 +36,7 @@ body {
 
 Notice the text inside `main` is now centered, and the text inside `footer` is centered. We could even take `text-align: center;` out of the `header`, and the `header` would remain centered.
 
-```
+```css
 header {
   background: gray;
   color: white;
@@ -48,7 +48,7 @@ Again, this is only aligning things left-to-right. You'll notice the `header` is
 
 It's very common to want to center a box like `main` on the page, and we have a trick specifically for that scenario. We will add a rule to the `main` element. The property is going to be `margin`, and the value is going to be `0 auto`.
 
-```
+```css
 main {
   background: silver;
   width: 400px;
@@ -66,7 +66,7 @@ There's a very powerful layout system in CSS called **flexbox**. We don't need t
 
 Before we add the CSS for this trick, we actually need to make a small tweak to our HTML. Inside the `header`, we need all three of these things&mdash;`h1`, `h2`, and `img`&mdash;to be inside another element, so I'm going to put an element inside the `header` called a `div`. A `div` is just a generic **block** element. It doesn't _mean_ anything. It's just a container that we sometimes need to target with CSS. So I'm going to put an opening `<div>` tag above the `h1`, and then a closing `</div>` tag right before the closing `</header>` tag. And I'm going to go ahead and indent the `h1`, the `h2`, and the `img` another level so that it's obvious that they're inside the `div`.
 
-```
+```html
 <header>
   <div>
     <h1>Night of the Salamander</h1>
@@ -80,7 +80,7 @@ Before we add the CSS for this trick, we actually need to make a small tweak to 
 
 Again, the `div` doesn't really mean anything. It's just necessary to make our CSS rule work. So here's the CSS for vertical alignment. This goes inside the `header` rule. First, we need to tell it to use flexbox within the header. For that, we use the `display` property. The `display` property, by default, is either `block` or `inline`, depending of what type of element it is (`block` in this case). But we want to set it to `flex`.
 
-```
+```css
 header {
   background: gray;
   color: white;
@@ -91,7 +91,7 @@ header {
 
 This, quite simply, turns on flexbox for the header. Now that actually un-centers things, so to re-center them, we need to say `justify-content: center;`.
 
-```
+```css
 header {
   ...
   display: flex;
@@ -101,7 +101,7 @@ header {
 
 There we go. But we're here to align things vertically. And for that, we use the property `align-items`, and once again give it the value `center`.
 
-```
+```css
 header {
   ...
   display: flex;

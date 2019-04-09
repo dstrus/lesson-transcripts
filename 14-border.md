@@ -10,7 +10,7 @@ Let's take a closer look at that image of Beasley.
 
 In the original design, Beasley is in a white circle. That's not using a different image. The white circle is nothing more than a **border**. We can add borders to an element with the `border` property in CSS.
 
-```
+```css
 border: 1px solid blue;
 ```
 
@@ -18,7 +18,7 @@ Border accepts any combination of these three values: Border width, style, and c
 
 Let's add a border to our image. We don't have a ruleset for our image yet, so let's add one at the very bottom. Go ahead and scroll down, and we'll add a new rulset with the selector `img`, because that's why type of element it is. Don't forget your curly braces, and we'll add the `border` property to our new declaration, and let's just experiment with some values here.
 
-```
+```css
 img {
   border: 1px solid pink;
 }
@@ -26,7 +26,7 @@ img {
 
 `1px solid pink`. Why not? Hey, there we go. It showed up. How about `10px`?
 
-```
+```css
 img {
   border: 10px solid pink;
 }
@@ -35,7 +35,7 @@ img {
 
 Yeah, all right! So, width, style, and color. With can be something like this&mdash;just a value in pixels or some other unit&mdash;or it can be something like `thin`, `medium`, or `thick`. I actually like `thick` for this. That happens to be the same as `5px`.
 
-```
+```css
 img {
   border: thick solid pink;
 }
@@ -43,7 +43,7 @@ img {
 
 Border style can be a number of different things: `solid` (probably the most common), `dashed`, `dotted` (which is not the same thing as `dashed`), `double` (that's fun!). There are a few others, but I think you get the picture. `solid` is what we want. And then any color we can think of: `pink`, `cornflowerblue`, or, you know, just `white`.
 
-```
+```css
 img {
   border: thick solid white;
 }
@@ -51,7 +51,7 @@ img {
 
 `thick solid white`. That seems like a pretty good border to me. Now how do we make it round? We do that with `border-radius`. So we'll add a new declaration: `border-radius`. And `border-radius` takes a value in pixels or some other unit. Let's try `5px`. Let's see what that gets us.
 
-```
+```css
 img {
   border: thick solid white;
   border-radius: 5px;
@@ -60,7 +60,7 @@ img {
 
 OK, it's a little bit rounded now. I don't know if you can see that. Let's try `15px`.
 
-```
+```css
 img {
   border: thick solid white;
   border-radius: 15px;
@@ -69,7 +69,7 @@ img {
 
 Now it is more dramatically rounded. How about `25px`? We can just keep going until we find something we like, but I had it as an actual circle. You can do that by setting the radius to half the width of the image, assuming that the image is, in fact, square&mdash;which ours is. I don't know off the top of my head how many pixels wide this image is, so I can use a different unit. How about `50%`?
 
-```
+```css
 img {
   border: thick solid white;
   border-radius: 50%;
@@ -80,7 +80,7 @@ A `border-radius` of `50%` will always get you a perfect circle if you have a sq
 
 Here's another little secret: You can have a different border on each side. There are properties `border-top`, `-right`, `-bottom`, and `-left`.
 
-```
+```css
 img {
   border-top: thick solid white;
   border-radius: 50%;
@@ -89,7 +89,7 @@ img {
 
 Now we only have a border on top. How about `border-right: 10px dashed pink;`?
 
-```
+```css
 img {
   border-top: thick solid white;
   border-right: 10px dashed pink;
@@ -99,7 +99,7 @@ img {
 
 OK, a little silly looking, but we can totally do that if we want to. I'm just going to stick with one border all the way around.
 
-```
+```css
 img {
   border: thick solid white;
   border-radius: 50%;
@@ -108,7 +108,7 @@ img {
 
 As long as I'm handing out borders, I'd like to give borders to our inputs and button. So those are the two preceding rulesets in our stylesheet.
 
-```
+```css
 input {
   padding: 8px;
 }
@@ -120,7 +120,7 @@ button {
 
 On `input`, let's go with `1px solid gray;`.
 
-```
+```css
 input {
   padding: 8px;
   border: 1px solid gray;
@@ -129,7 +129,7 @@ input {
 
 There we go. And for the button, let's do the same: `1px solid gray;`.
 
-```
+```css
 button {
   padding: 8px 24px;
   border: 1px solid;

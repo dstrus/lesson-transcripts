@@ -6,13 +6,13 @@ Code along with me using the editor on this page, and remember to pause the vide
 
 We have a form with two inputs and a button on the page, but the inputs are entirely unlabeled, so we have no idea what to put in them. Looking at the design, it seems the first input is meant to capture the person's email. All right, let's see if we can give the user some sort of clue that that's what goes there. We can do that by adding a new **attribute** to the first input. That attribute is called `placeholder`.
 
-```
+```html
 <input placeholder="">
 ```
 
 So as with other attributes, we have the attribute name, `placeholder`, an equals sign, and quotation marks. Whatever's inside the quotation marks is what will show up as a placeholder in the form field. So we'll write `Email`.
 
-```
+```html
 <input placeholder="Email">
 ```
 
@@ -20,13 +20,13 @@ And looks what happens in the preview. Now it says "Email" in there, but as soon
 
 I mentioned that inputs have different types. You specify the type of an input, predictably enough, with the `type` **attribute**. The default happens to be `text`.
 
-```
+```html
 <input placeholder="Email" type="text">
 ```
 
 Even though we didn't have `type="text"` in this input until now, we may as well have, because that is the default. But there are a whole bunch of types, and one of them just happens to be `email`.
 
-```
+```html
 <input placeholder="Email" type="email">
 ```
 
@@ -34,14 +34,14 @@ So we can put `type="email"`, and that's a little more accurate. `type="text"` w
 
 Looking at the second form field in the design, it looks like that's meant to capture the number of guests the person is bringing. All right, so let's add an appropriate placeholder to the second input: `placeholder="# of guests"`.
 
-```
+```html
 <input placeholder="Email" type="email">
 <input placeholder="# of guests">
 ```
 
 What about `type`? Again, by default the type is `text`, and that's just fine. There's nothing stopping you from typing in the number of guests in a `text` field. But what would be even better is `type="number"`.
 
-```
+```html
 <input placeholder="Email" type="email">
 <input placeholder="# of guests" type="number">
 ```

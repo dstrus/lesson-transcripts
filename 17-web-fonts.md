@@ -12,7 +12,7 @@ You can browse through and find a couple of fonts you like. I do want two differ
 
 Click back over to the _EMBED_ tab, and it gives you _standard_ instructions and `@import` instructions. We're actually going to use the `@import` instructions, and it will give us a line that begins with `@import` and then `url`, and then the URL to these two fonts. That's what we need in our stylesheet. So copy that line, switch back over to your code, and at the very top of your CSS, paste that line&mdash;the line beginning with `@import`.
 
-```
+```css
 @import url('https://fonts.googleapis.com/css?family=Oswald|Raleway:400,700');
 ```
 
@@ -20,7 +20,7 @@ This will make those fonts available to the page, but we still have to specify t
 
 > Specify in CSS. Use the following CSS rules to specify these families:
 
-```
+```css
 font-family: 'Oswald', sans-serif;
 font-family: 'Raleway', sans-serif;
 ```
@@ -29,7 +29,7 @@ The way the `font-family` property works in CSS is that you can specify more tha
 
 For my `h1`, I want to use Oswald. So I'll find my `h1` rule and add `font-family: 'Oswald', sans-serif;`.
 
-```
+```css
 h1 {
   color: gold;
   margin-top: 0;
@@ -40,7 +40,7 @@ h1 {
 
 Ooh, look at that! Much better. I like it. I think I'm actually going to use Raleway for everything else on the page, so I'll copy that line from Google Fonts and paste it inside the rule for `body`.
 
-```
+```css
 body {
   text-align: center;
   margin: 0;

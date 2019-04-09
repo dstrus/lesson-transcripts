@@ -10,7 +10,7 @@ Code along with me using the editor on this page, and remember to pause the vide
 
 We're messing with the background image of the `header` element, so I'll scroll down to those rules, and it turns out that the `background-image` property can take more than just the URL of an image as its value. It can also take a **linear gradient**. A gradient is when one color fades into another. For the moment, I'm going to add a second `background-image` declaration, and we're not going to keep it this way (we're doing something wrong here), but it turns out if you put two of the same declarations in the same ruleset, it will ignore the first one and use whatever value you put in the second one. So that's what we're going to do. We're going to add a linear gradient here. I'll just show you a quick example.
 
-```
+```css
 header {
   ...
   background-image: linear-gradient(red, yellow);
@@ -25,7 +25,7 @@ Beautiful! That also fixes our readability problems, doesn't it? The text is rea
 
 You can also use more than two colors. You can list any number of colors that you like. Let's add `white` to the mix here.
 
-```
+```css
 header {
   ...
   background-image: linear-gradient(red, yellow, white);
@@ -38,7 +38,7 @@ There we go. It becomes slightly less readable, but now it fades very nicely int
 
 Well, guess what? We can put background images on top of each other.So we can put our gradient _on top_ of our image. Right now, the gradient is the only background image it's using, because it comes second in the list. We used two `background-image` declarations. Let's go back down to just one `background-image` declaration, and let's separate our two values&mdash;our gradient and the URL&mdash;with a comma. So let's move the actual image URL to right after the `linear-gradient` value, with a comma in between the two. And let's get rid of this first `background-image` declaration now.
 
-```
+```css
 header {
   ...
   background-image: linear-gradient(red, yellow, white), url(...salamander.jpg);
@@ -47,7 +47,7 @@ header {
 
  This is a little hard to read all on one line. It turns out, CSS, like HTML, doesn't really care where you put line breaks. Let's just put a line break before `linear-gradient` and right after the comma.
 
-```
+```css
 header {
   ...
   background-image:
@@ -60,7 +60,7 @@ There we go. That's a little clearer. So we have a comma-separated list of backg
 
 Anyplace that you can use a named color, you can also use an **RGB** color: RGB as in red, green, blue&mdash;the three primary colors of light.
 
-```
+```css
 color: rgb(255, 50, 100);
 ```
 
@@ -70,7 +70,7 @@ What do you think `rgb(255, 255, 255)` would be? All three colors turned all the
 
 Let's use RGB colors in our gradient instead of named colors. So instead of `red, yellow, white`, let's try... let's try red again. So RGB is red, green, and blue in that order. So the red should be `255`, and the green and blue should both be zero: `rgb(255,0,0)`. So that's one color in our gradient. For the second color, let's see if we can do yellow again. So that's red all the way up, green all the way up, and no blue: `rgb(255,255,0)`.
 
-```
+```css
 header {
   ...
   background-image:
@@ -83,7 +83,7 @@ And there we go. We have our red-to-yellow gradient. Perfect.
 
 So what has this gained us? Well, it gets us one step closer to having transparency. To specify transparency in our colors, we use **RGBA** instead of just RGB. That's red, green, blue, and an addition value for **alpha**. So instead of `rgb()`, we use `rgba()`.
 
-```
+```css
 color: rgba(255, 50, 100, 1);
 ```
 
@@ -91,7 +91,7 @@ That fourth value ranges from 0, for completely transparent, to 1 for completely
 
 So let's replace our yellow with an RGBA value. First, we add the `a`, then we add a fourth value. What if that fourth value is simply `0`?
 
-```
+```css
 header {
   ...
   background-image:
@@ -106,7 +106,7 @@ Well, then the yellow becomes completely transparent, and we get a gradient from
 
 OK, then we get a gradient from opaque red to translucent yellow. What if we make the red RGBA as well and say it's `0.7` to start?
 
-```
+```css
 header {
   ...
   background-image:
@@ -121,7 +121,7 @@ All right, then we get translucent red to translucent yellow, and our text is pr
 
 If we wanted to just darken the image, and not change its color at all, we could use an RGBA black and fade from 50% transparent black (`0.5`) to 50% transparent black.
 
-```
+```css
 header {
   ...
   background-image:

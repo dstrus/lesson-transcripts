@@ -14,7 +14,7 @@ Believe it or not there's absolutely no difference between the HTML in those two
 
 Where HTML is made up of elements, CSS is made up of **rulesets**, also called **rules**.
 
-```
+```css
 h1 {
   background-color: white;
   color: black;

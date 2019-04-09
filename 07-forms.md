@@ -6,7 +6,7 @@ Code along with me using the editor on this page, and remember to pause the vide
 
 It looks like the form is inside the main area of the page, after "We hope to see you October 13", but before the footer. So we'll add it to the page just before the closing `</main>` tag. So let's add an extra line here under the paragraph&mdash;maybe two extra lines&mdash;and let's create a form. Anyone care to guess what that element is called? That's right: `form`.
 
-```
+```html
 <main>
   <h3>Album release party</h3>
 
@@ -20,7 +20,7 @@ Piece of cake. Now, that form had two places for users to type in input, as well
 
 First, we'll put an input: Simply the `input` element. Like images, inputs are _empty_ elements. They have no contents, and they have no corresponding closing tag. Once again, the closing tag isn't optional; it's actually forbidden. We do not have one.
 
-```
+```html
   <form>
     <input>
   </form>
@@ -31,7 +31,7 @@ So that's one input. That's one place for a user to type something, and we see t
 
 Now we need a second input.
 
-```
+```html
   <form>
     <input>
     <input>
@@ -42,7 +42,7 @@ And there it is! And once again, we see that these are side by side in the previ
 
 So we have a form with two inputs. Now we need one more thing in our form, and that is a _button_. So after the second input, let's add another new element called, predictably enough, `button`. And `button` does have a closing tag. And whatever you put between the two tags is what will show up on the button. Our button said "RSVP" in the design, so we'll type "RSPV" between the opening and closing `button` tags...
 
-```
+```html
   <form>
     <input>
     <input>

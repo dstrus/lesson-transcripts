@@ -28,7 +28,7 @@ So where do we need to make some adjustments? Well, we employed our trick to ver
 
 The element we're changing is the `h1`, so let's find the ruleset for the `h1`...
 
-```
+```css
 h1 {
   color: gold;
 }
@@ -36,7 +36,7 @@ h1 {
 
 ...and then what we're changing is the _top_ margin. There are margin properties named `margin-top`, `margin-right`, `margin-bottom`, and `margin-left`. If you're only wanting to change _one_ of those, then you only need the property for that side. In this case: `margin-top`. We're changing it to simply zero.
 
-```
+```css
 h1 {
   color: gold;
   margin-top: 0;
@@ -49,7 +49,7 @@ Notice that "Night of the Salamander" moved up, as did the rest of the contents 
 
 Have you noticed that there's some empty whitespace around the entire thing? Turns out, the `body` itself has a margin by default, and that's stopping our header from going edge-to-edge like we want it to. Let's remove that margin as well. This time, the element we're changing is the `body`, so let's scroll back up to the `body` ruleset, which right now just has `text-align`, and this time we want to give it _no_ margin on _every_ side. We could put `margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;`. But since we want the margin to be the same on every side, we can simply use the property `margin`.
 
-```
+```css
 body {
   text-align: center;
   margin: 0;
@@ -60,7 +60,7 @@ body {
 
 I think we could use some padding in the `main` section of the page. Looking at the `main` box with "Album release party", "We hope to see you October 13", and the form, there's no space at all around the edge, especially at the top and bottom. On the left and right, there is space, because it's centered and we specified the total width. But it could really use some padding all the way around. So let's try to do that. Scroll down to `main`, and let's add a declaration for `padding`. And we want it on all four sides, so we'll just say `padding: `... how about `20px`?
 
-```
+```css
 main {
   background: silver;
   width: 400px;
@@ -71,7 +71,7 @@ main {
 
 Well, that certainly is padded, but it's a little funny looking, isn't it? All of a sudden, there's no space between `header` and `main`, and now there's way too much space above "Album release party". So, "Album release party" is an `h3`. There's no rule for `h3` right now. We've styled the `h1` and `h2`, but not the `h3`. So let's add a rule for `h3`, and let's say `margin-top: 0;`, just like we did for `h1`.
 
-```
+```css
 h3 {
   margin-top: 0;
 }
@@ -79,7 +79,7 @@ h3 {
 
 OK, that helps. There's no longer way too much space above the `h3`. But we still don't have any space between the header and `main`, and we really want there to be some. There are several ways we could fix this. One of the most obvious to me is to have some margin above `main`, so let's look at that. Back down in `main`, we already have `margin`. We have `margin: 0 auto;`.
 
-```
+```css
 main {
   background: silver;
   width: 400px;
@@ -92,7 +92,7 @@ We've learned about the properties `margin-top`, `-right`, `-bottom`, and `-left
 
 `margin`, it turns out, can have one, two, three, or four values. When there's only one value, that same margin is applied to all four sides. You can use four values to specify different values for each of the four sides using a single declaration. You specify them in clockwise order: top, right, bottom, and left, always in that order, each separated by a space. And keep in mind that all of this applies to padding as well. So what if you only specify two values? In that case, the first value applies to both the top and the bottom, and the second values applies to both the left and the right. So this declaration that says `margin: 0 auto;` is really saying `0` margin on the top and bottom, and `auto` margin on the left and right. So it turns out, `auto` applied to left and right margin _centers_ an element. It doesn't necessarily center its contents; it centers the element itself. So the `0` refers to top and bottom, and that's where it isn't looking quite right. So what if we change this from `0 auto` to `20px auto`?
 
-```
+```css
 main {
   ...
   margin: 20px auto;
@@ -102,7 +102,7 @@ main {
 
 Ah ha! There we go. Now have margin on the top, and there is space between `header` and `main`. this is starting to look right. So where else could we use a little more space? Personally, I'd like to see a little more space inside our form inputs. So let's add a rule for `input`. `input` is the name of the element, so we should be able to write a selector `input` and have it apply to both form fields. Let's just give it `8px` of padding all the way around.
 
-```
+```css
 input {
   padding: 8px;
 }
@@ -110,7 +110,7 @@ input {
 
 Nice. I like it, but that button looks a little silly now, doesn't it? So let's apply some padding to the button as well. Again, our selector can be just plain `button`, and let's give it padding of `8px`.
 
-```
+```css
 button {
   padding: 8px;
 }
@@ -118,7 +118,7 @@ button {
 
 OK, that's not terrible, but I'd kind of like a little extra padding on the left and right inside that button. `8px` looks good on the top and bottom, but I want a little extra on the left and right. So how about giving `padding` two values, the way that we did `margin`? `8px` on the top and bottom; `24px` on the left and right.
 
-```
+```css
 button {
   padding: 8px 24px;
 }

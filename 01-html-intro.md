@@ -18,7 +18,7 @@ HTML stands for <strong>Hypertext Markup Language</strong>. We know what hyperte
 
 This is an HTML version of <cite>Pride and Prejudice</cite>. What do we have here? We have a heading for the title, a subheading for the author, another subheading for the chapter, some navigation made up of links to jump between chapters and the full text, and a bunch of paragraphs. Each of those things is an element, so let's have a look at one of them.
 
-```
+```html
 <h1>Pride and Prejudice</h1>
 ```
 

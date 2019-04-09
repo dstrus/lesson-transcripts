@@ -8,7 +8,7 @@ Right now, everything is shown at whatever font size the browsers displays by de
 
 We'll start with the `h1`. So go to the rule for the `h1`, and we'll add a new declaration for the property `font-size`. As you might expect, we can use the same units that we've used for width, padding, border, and so on, and we'll stick with pixels (`px`) for this one. So I'm going to make the font size for all `h1`s on the page `40px;`.
 
-```
+```css
 h1 {
   color: gold;
   margin-top: 0;
@@ -18,7 +18,7 @@ h1 {
 
 There we go. It got a little bigger. What else? How about inputs? Let's change the font size for `input`. I'll change it to `12px`.
 
-```
+```css
 input {
   padding: 8px;
   border: 1px solid gray;
@@ -28,7 +28,7 @@ input {
 
 There. That, too, got a little bigger. And I think the button should match the input, so let's add `font-size: 12px;` to our `button` ruleset as well.
 
-```
+```css
 button {
   padding: 8px 24px;
   border: 1px solid gray;
@@ -38,7 +38,7 @@ button {
 
 One more change. Let's make the `footer` font `12px`. Right now, we don't have a rule for the footer, so we'll have to add one. Add a new ruleset with the selector `footer`, curly braces, and our declarations. We just have one: `font-size: 12px;`.
 
-```
+```css
 footer {
   font-size: 12px;
 }

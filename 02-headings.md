@@ -10,7 +10,7 @@ So let's go ahead and use the HTML element that we know: H1, top level heading.
 
 So at the very beginning, before "Night of the Salamander", put `<h1>`. Now as soon as we do that, notice what happens. Now the entire thing looks like an H1. All the fonts get big and bold. At the end of the first line ("Night of the Salamander"), go ahead and put the corresponding closing tag for the H1: `</h1>`.
 
-```
+```html
 <h1>Night of the Salamander</h1>
 ```
 
@@ -18,7 +18,7 @@ Now it knows where the H1 ends, and so only "Night of the Salamander" is big and
 
 How about we make "The new release from Beasley the Bard" (the second line here) an H2. So let's put `<h2>` at the beginning&mdash;and again, the whole rest of the document changes to look like an H2, which is slightly smaller, but still bold&mdash;and at the end of the line, the closing tag: `</h2>`.
 
-```
+```html
 <h2>The new release from Beasley the Bard</h2>
 ```
 
@@ -28,7 +28,7 @@ Now, we only only have one H1 and one H2 on this page, but that's not a rule or 
 
 Let's make "Album release party" an H3. Put the opening tag (`<h3>`) and the corresponding closing tag (`</h3>`)...
 
-```
+```html
 <h3>Album release party</h3>
 ```
 

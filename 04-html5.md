@@ -10,7 +10,7 @@ H1, H2... these are part of the _header_ of our document. The H3 and the paragra
 
 At the very beginning of the document, I'm going to add an element,  `<header>`. And I'm going to put a corresponding closing tag down here above "Album release party".
 
-```
+```html
 <header>
 <h1>Night of the Salamander</h1>
 <h2>The new release from Beasley the Bard</h2>
@@ -21,7 +21,7 @@ At the very beginning of the document, I'm going to add an element,  `<header>`.
 
 So that includes the H1, the H2, and this weird little thing that we haven't talked about yet. We'll get to that soon. Don't worry. Now everything between the open and closing `header` tags is a header, right? It isn't terribly easy at a glance to tell where it begins and ends, because the opening tag and the closing tag are several lines away from each other. Sometimes you'll have pages and pages of markup, and you can make your life a whole lot easier by doing something to make these things easier to find. So what we can do is _indent_ the markup in between the opening and closing tags. CodePen makes this really easy. You can just highlight all of those lines&mdash;everything in between the opening and closing `header` tags&mdash;and hit <span style="font-family: monospace; border-radius: 4px; border: 2px solid #ccc; border-bottom-width: 3px; margin-right: 5px; font-size: 14px; padding: 1px 5px;">Command</span> + <span style="font-family: monospace; border-radius: 4px; border: 2px solid #ccc; border-bottom-width: 3px; margin-right: 5px; font-size: 14px; padding: 1px 5px;">]</span> on Mac, or <span style="font-family: monospace; border-radius: 4px; border: 2px solid #ccc; border-bottom-width: 3px; margin-right: 5px; font-size: 14px; padding: 1px 5px;">Ctrl</span> + <span style="font-family: monospace; border-radius: 4px; border: 2px solid #ccc; border-bottom-width: 3px; margin-right: 5px; font-size: 14px; padding: 1px 5px;">]</span> on Windows, which is common keyboard shortcut for indenting in code editors.
 
-```
+```html
 <header>
   <h1>Night of the Salamander</h1>
   <h2>The new release from Beasley the Bard</h2>
@@ -35,7 +35,7 @@ Now this indents that markup without actually changing the way it appears on the
 Similarly, let's wrap the H3 and paragraph in a `main` element. Opening tag, closing tag, let's go ahead and indent everything that's in between...
 
 
-```
+```html
 <main>
   <h3>Album release party</h3>
 
@@ -45,7 +45,7 @@ Similarly, let's wrap the H3 and paragraph in a `main` element. Opening tag, clo
 
 ... beautiful! Look at that structure! And then everything else I'm going to put inside a `footer`. Opening `<footer>` tag, and then at the very, very bottom, a closing `</footer>` tag. And indent everything that comes in between.
 
-```
+```html
 <footer>
   <p>Pixel art by Eric Alloway (@Iscaneus).</p>
 

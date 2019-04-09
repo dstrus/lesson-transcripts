@@ -8,37 +8,37 @@ Code along with me using the editor on this page, and remember to pause the vide
 
 We added some beautiful pixel art of our man Beasley to the page, and we've actually already credited the artist down here.
 
-```
+```html
 <p>Pixel art by Eric Alloway (@Iscaneus).</p>
 ```
 
 "Pixel art by Eric Alloway", and there's his Twitter handle inside parentheses, so wouldn't it be cool if that were actually a link to his Twitter page? Well, it just so happens that the URL of his Twitter page is right here inside an HTML comment.
 
-```
+```html
 <!-- https://twitter.com/iscaneus -->
 ```
 
 How convenient! So let's add a link. The element for links is `a`, for _anchor_. So right before the `@`, let's add an `<a>` tag. We'll add the closing tag, `</a>`, right after `@Iscaneus`.
 
-```
+```html
 <p>Pixel art by Eric Alloway (<a>@Iscaneus</a>).</p>
 ```
 
 Great! Now the thing that makes it a link and not just an anchor is the `href` attribute. So let's add that attribute to the opening tag.
 
-```
+```html
 <a href="">@Iscaneus</a>
 ```
 
 Inside the quotation marks, we'll put the URL that's down here inside the comment. So copy it from here...
 
-```
+```html
 <!-- https://twitter.com/iscaneus -->
 ```
 
 ...paste inside the quotation marks, and we have...
 
-```
+```html
 <a href="https://twitter.com/iscaneus">@Iscaneus</a>
 ```
 
@@ -46,7 +46,7 @@ Now notice that [@Iscaneus](https://twitter.com/iscaneus) is clickable in the pr
 
 Beautiful! We added a hyperlink to our page. Now it happens there's another link already on the page down here.
 
-```
+```html
   <p>Fire salamander photo by Cristo Vlahos. <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a></p>
 </footer>
 ```

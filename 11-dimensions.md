@@ -6,7 +6,7 @@ Code along with me using the editor on this page, and remember to pause the vide
 
 In our efforts to make this match the final design, let's add a bit of vertical space to the `header`. It's not as tall as I would like right now. To do that, we'll set a height on the header. Add a new declaration to the existing `header` rule in the CSS.
 
-```
+```css
 header {
   background: gray;
   color: white;
@@ -18,7 +18,7 @@ There is, as you might expect, a `height` property in CSS. You can use a variety
 
 Now let's take a closer look at the `main` content area of our page. Scroll down to that in the HTML, and remember that `main` encompasses the `h3`, the paragraph, and the `form`. It's hard to tell exactly how much space `main` is taking up without a background color. Let's add a background really quickly.
 
-```
+```css
 main {
   background: silver;
 }
@@ -26,7 +26,7 @@ main {
 
 So we'll add a new ruleset for the element `main`, and I'll give it a background... let's say `silver`. There we go. Now I can see that it is taking up the full width and taking up just as much vertical space as it needs. In the original design, the `main` section does _not_ take up the full width, so let's limit its width a bit.
 
-```
+```css
 main {
   background: silver;
   width: 400px;
