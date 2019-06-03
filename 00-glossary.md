@@ -44,7 +44,7 @@ The **DOM**, short for **Document Object Model**, is the web browser's represent
 
 ### event
 
-An **event** is something like a mouse click, or key press, that can happen to a web document, or to a particular element (such as a button) within that document.
+An **event** is something like a mouse click or key press that can happen to a web document, or to a particular element (such as a button) within that document.
 
 ### event handler
 
