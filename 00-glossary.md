@@ -64,7 +64,7 @@ In JavaScript, a **global variable** is a variable that is accessible in the glo
 
 ### hero image
 
-A large, featured image at or near the top of a web page.
+A **hero image** is a large, featured image at or near the top of a web page.
 
 ### HTML
 
