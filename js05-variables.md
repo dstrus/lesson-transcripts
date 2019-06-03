@@ -135,8 +135,8 @@ Do you think this works? It gave me `10`. Sure, it just evaluates the right side
 x += 2
 ```
 
-...gives us `12`. And that is the same as writing `x = x + 2`. Exactly the same thing.
+...gives us `12`. And that is the same as writing `x = x + 2`. Exactly the same thing. This may not seem like a big deal, but it's really handy when your variable names get a bit longer than just `x`. It saves you some typing, and you avoid some repetition that sort of clutters things up and makes it a tiny bit harder to read. I'm always interested in making code more readable.
 
-Variables are incredibly useful. Don't worry: There's a lot more to programming than just math. In fact, much of the time, we're manipulating _text_, rather than manipulating numbers, and that's what we're going to do next. We're going to learn how to work with text using something called a **string**.
+Variables are incredibly useful, because we need to store and reuse values all the time. Don't worry: There's a lot more to programming than just math. In fact, much of the time, we're manipulating _text_, rather than manipulating numbers, and that's what we're going to do next. We're going to learn how to work with text using something called a **string**.
 
 That's next time. Until then, I'm Davey Strus. Haaaappy hacking!

@@ -14,6 +14,10 @@ Your console may have opened at the bottom instead of over at the right like thi
 
 So perhaps it opened on the bottom. If so, if you want it on the right like mine, just click here and click this button, "Dock to right". But it doesn't really matter where it is. It'll work the same, regardless.
 
-Now that we have the console open, we can begin experimenting with JavaScript. And that's what we'll do next time.
+It's possible that there are already some error messages or other messages in the console as soon as you open it. If so, don't worry about it. They could be there for any number of reasons having to do with the page you happen to be on, or even related to some browser extensions that are installed. If there are errors or other messages in the console at this point, feel free to ignore them.
 
-Until then, I'm Davey Strus. Haaaappy hacking!
+It's also worth noting that none of the changes that you make using the console are permanent. They only affect this load of the page in your browser. The page returns to normal as soon as you refresh. And no one else visiting the page ever sees your changes. All right?
+
+And by the way, the console will remain open in this tab until you close it, even if you visit another page. If you want it closed, you need to close it yourself.
+
+Now that we have the console open, we can begin experimenting with JavaScript. Until then, I'm Davey Strus. Haaaappy hacking!

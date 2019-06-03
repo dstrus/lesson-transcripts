@@ -14,7 +14,11 @@ And it returns... `4`. That's what happens when it **evaluates** this line of Ja
 4 + 3
 ```
 
-And it gives us `7`. Yep, totally valid line of JavaScript. How about multiplication?
+And it gives us `7`. Yep, totally valid line of JavaScript.
+
+By the way, I put spaces around the `+` sign for the sake of readability. The spaces are optional.
+
+How about multiplication?
 
 ```js
 4 * 3
