@@ -28,7 +28,7 @@ Also in JavaScript, function **declaration** is a particular syntax for defining
 
 ### declaration block
 
-In a CSS ruleset, the **declaration block** consists of one or more declarations inside a pair or curly braces.
+In a CSS ruleset, the **declaration block** consists of one or more declarations inside a pair of curly braces.
 
 ### declare
 
