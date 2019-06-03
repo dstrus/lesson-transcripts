@@ -144,7 +144,7 @@ In programming languages such as JavaScript, a **return value** is the output (i
 
 ### ruleset
 
-In CSS, a **ruleset**, or **rule**, is the combination or a selector (or group of selectors) and a declaration block, defining that certain styles should be applied to certain elements.
+In CSS, a **ruleset**, or **rule**, is the combination of a selector (or group of selectors) and a declaration block, defining that certain styles should be applied to certain elements.
 
 ### scope
 
