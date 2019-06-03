@@ -116,7 +116,7 @@ In JavaScript, a **local variable** is a variable that exists only within the sc
 
 ### margin
 
-An element's **margin** is the space around an element, outside the element's border.
+An element's **margin** is the space around the element, outside the element's border.
 
 ### padding
 
