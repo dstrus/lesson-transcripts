@@ -152,13 +152,13 @@ In programming languages such as JavaScript, **scope** refers to the set of vari
 
 ### selector
 
-In CSS, a **selector** is a pattern that defines which element a ruleset should apply to.
+In CSS, a **selector** is a pattern that defines which element(s) a ruleset should apply to.
 
 In JavaScript, a **selector** can be used to select elements with `document.querySelector()` or `document.querySelectorAll()`.
 
 ### string
 
-In programming languages such as JavaScript, a **string** is piece of data containing text.
+In JavaScript, **string** is a simple data type for values containing exclusively text, created by enclosing text within a set of quotation marks (single or double).
 
 ### syntax
 
